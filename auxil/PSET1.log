@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.26)  26 MAR 2025 16:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.26)  26 MAR 2025 20:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**./notes.tex
-(notes.tex
+**./PSET1.tex
+(PSET1.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (C:\Users\orang\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -97,48 +97,63 @@ tex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box54
-) (C:/Users\orang\OneDrive\Desktop\GEOS-13300\out\notes.aux)
-\openout1 = `notes.aux'.
+)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Warning: Unused global option(s):
+    [margin].
+
+(C:/Users\orang\OneDrive\Desktop\GEOS-13300\auxil\PSET1.aux)
+\openout1 = `PSET1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 
 [1
 
 {C:/Users/orang/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(C:/Users\orang\OneDrive\Desktop\GEOS-13300\out\notes.aux)
+(C:/Users\orang\OneDrive\Desktop\GEOS-13300\auxil\PSET1.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1141 strings out of 473523
- 17774 string characters out of 5714630
- 406016 words of memory out of 5000000
- 24433 multiletter control sequences out of 15000+600000
- 559137 words of font info for 37 fonts, out of 8000000 for 9000
+ 1179 strings out of 473523
+ 18355 string characters out of 5714630
+ 418094 words of memory out of 5000000
+ 24458 multiletter control sequences out of 15000+600000
+ 564291 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,5n,65p,203b,113s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,7n,65p,203b,197s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/orang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr10.pfb>
-Output written on C:/Users\orang\OneDrive\Desktop\GEOS-13300\out\notes.pdf (1 p
-age, 10710 bytes).
+cmbx12.pfb><C:/Users/orang/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><C:/Users/orang/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb><C:/Users/orang/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/orang/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/orang/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/orang/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/orang/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ora
+ng/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
+Users/orang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb>
+Output written on C:/Users\orang\OneDrive\Desktop\GEOS-13300\out\PSET1.pdf (1 p
+age, 106182 bytes).
 PDF statistics:
- 11 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
