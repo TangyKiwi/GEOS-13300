@@ -1,0 +1,61 @@
+%! Author = Kevin Lin
+%! Date = 4/1/2025
+
+% Preamble
+\documentclass[11pt,a4paper,margin=1in]{article}
+
+% Packages
+\usepackage{amsmath}
+
+\title{PSET 2}
+\author{Kevin Lin}
+\date{4/1/2025}
+
+% Document
+\begin{document}
+\maketitle
+\section{}
+\begin{flushleft}
+    Assume that the average tree absorbs 10 kg of CO$_2$ per year, and 
+    that 1000 trees are planted per hectare. 1 hectare is 0.01 km$^2$. Thus, the mass
+    of CO$_2$ absorbed per year per square kilometer is:
+\end{flushleft}
+\begin{gather*}
+    10 \frac{\text{kg}}{\text{tree}} \times 10^3 
+        \frac{\text{trees}}{\text{hectare}} \times 10^2 
+        \frac{\text{hectares}}{\text{km}^2} = 10^6 
+        \frac{\text{kg}}{\text{km}^2}\\
+    10^6 \frac{\text{kg}}{\text{km}^2} 
+        = 10^6\times10^3 \frac{\text{g}}{\text{km}^2}
+        = 10^9 \frac{\text{g}}{\text{km}^2} \text{ per year}\\
+\end{gather*}
+
+\section{}
+\begin{flushleft}
+    Assume we lose 10 million hectares of forest each year, and that deforestation 
+    started 12,000 years ago. Also assume that the amount of CO$_2$ lost from a
+    square kilometer of trees yearly is the same amount that can be stored 
+    (our answer from 1). We know 1 hectare is 0.01 km$^2$, so this means we lose:
+\end{flushleft}
+\begin{gather*}
+    10^7 \frac{\text{hectares}}{\text{year}} \times 10^{-2} 
+        \frac{\text{km}^2}{\text{hectare}} = 10^5 \frac{\text{km}^2 
+            \text{ (of trees)}}{\text{year}}\\
+    10^5 \frac{\text{km}^2 \text{ (of trees)}}{\text{year}} = 
+        10^5 \text{ km}^2 \times 10^9 \frac{\text{g}}{\text{km}^2 \cdot \text{year}} 
+        = 10^{14} \frac{\text{g (of CO}_2)}{\text{year}}\\
+    12000 = 1.2 \times 10^4 \approx 10^4 \text{ years}\\
+    10^4 \text{ years} \times 10^{14} \frac{\text{g}}{\text{year}} = 10^{18} 
+        \text{ g of CO}_2 \text { total}
+\end{gather*}
+\begin{flushleft}
+    From class, we know that the total mass of CO$_2$ emitted by cars in the US
+    per year is around 10$^{15}$g. This means that it would only take around 10$^3$ 
+    years of car emissions to equal the total amount of CO$_2$ emitted from deforestation.
+    Note that this is a very rough estimation, as the deforestation rate is definitely
+    not constant over the last 12,000 years, but more likely exponential. However,
+    the relative order of magnitude is still the same. This still highlights 1),
+    the amount of deforestation that has occurred, and 2), the amount of CO$_2$
+    that comes from driving emissions in the US alone. 
+\end{flushleft}
+\end{document}

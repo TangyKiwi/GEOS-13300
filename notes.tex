@@ -2,14 +2,29 @@
 %! Date = 3/26/2025
 
 % Preamble
-\documentclass[11pt]{article}
+\documentclass[11pt,a4paper,margin=1in]{article}
 
 % Packages
 \usepackage{amsmath}
 
 % Document
 \begin{document}
-3/26
-git test
-
+\begin{flushleft}
+    $\textbf{3/28 Orientation Estimation}$\\
+    What is the total mass of $\text{CO}_2$ put into the atmosphere by a 1-GW coal power plant per year?\\
+    $\text{1-GW} = 10^9 \frac{\text{J}}{\text{s}}$\\
+    $10^9 \frac{\text{J}}{\text{s}} \times 365 \frac{\text{days}}{\text{yr}} \times 24 \frac{\text{hr}}{\text{day}}
+        \times 3600 \frac{\text{s}}{\text{hr}} = 10^9 \times \pi \times 10^2 \times \pi \times 10 \times \pi \times \pi
+        \times 10^3 \frac{\text{J}}{\text{yr}} = \pi \times 10^{16} \frac{\text{J}}{\text{yr}}$\\
+    The plant has an efficiency of $\frac{1}{3}$ and that burning coal releases $10^7 \text{ J kg}^{-1}$.\\
+    $\text{M}_\text{carbon} = \text{efficiency} \times \pi \times 10^{16} \frac{\text{J}}{\text{yr}} \times \frac{\text{kg}}{10^7 \text{J}}$\\
+    $\text{M}_\text{carbon} = \pi \times \pi \times 10^{9} \frac{\text{kg}}{\text{yr}} = 10^{10} \frac{\text{kg}}{\text{yr}}$\\
+    1 mol C is 12 g, 1 mol $\text{CO}_2$ is 44 g. Thus: \\
+    $\text{M}_{\text{CO}_2} = \text{M}_\text{carbon} \cdot \frac{44\text{g}}{12\text{g}}$\\
+    $\text{M}_{\text{CO}_2} = \pi \times 10^{10} \frac{\text{kg}}{\text{yr}}$\\
+\end{flushleft}
+\begin{flushleft}
+    Total world power consumption is $10^5$ TW-h per year. How many 1-GW power stations would be needed to supply this power?\\
+    $10^5\text{TW-h} \times 10^3\frac{\text{GW}}{\text{TW}}$
+\end{flushleft}
 \end{document}
