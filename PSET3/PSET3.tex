@@ -1,0 +1,69 @@
+%! Author = Kevin Lin
+%! Date = 4/11/2025
+
+% Preamble
+\documentclass[11pt,a4paper,margin=1in]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{enumerate}
+
+\title{PSET 3}
+\author{Kevin Lin}
+\date{4/11/2025}
+
+\begin{document}
+\maketitle
+\section{}
+From class we know the hydrostatic balance equation:
+\[
+    \frac{dP}{dz} = -\rho g
+\]
+Let the pressure at the surface (also our lower boundary) be $P$. Because the
+atmosphere is homogenous, we know $\rho$ is constant. Thus, reorganizing our
+equation and integrating from the surface (0, $P_0$) to some height ($H$) (where
+$P = 0$) gives us:
+\begin{gather*}
+    \int_{P_0}^{0} dP = -\rho g \int_{0}^{H}  dz\\
+    0 - P_0 = -\rho g (H - 0)\\
+    -P_0 = -\rho g H\\
+    H = \frac{P_0}{\rho g}
+\end{gather*}
+At the surface, $P_0 = \rho R T_0$, where $T_0$ is our lower boundary temperature.
+Thus:
+\begin{gather*}
+    H = \frac{\rho R T_0}{\rho g}\\
+    H = \frac{R T_0}{g}
+\end{gather*}
+Therefore, $H$, which also represents the scale height of the atmosphere, must
+be a finite value as $R$ and $g$ are both constants, and $T_0$ is a constant
+determined at the lower boundary (surface), which is definitely not infinity.
+
+\section{}
+\begin{enumerate}[A.]
+\item
+    Recall that the tropopause is the boundary between the troposphere and 
+    stratosphere where the temperature changes from decreasing to increasing
+    with height. We also know that pressure decreases with height. Combining
+    these two facts, we can conclude that the troposphere is represented by the
+    dotted line in the figure. We know that the troposphere is around 10 km in
+    height, and that from the figure, its temperature changes from 300K to 200K.
+    Thus, its lapse rate is:
+    \begin{gather*}
+        \Gamma = -\frac{dT}{dz} = -\frac{200\text{ K} - 300 \text{ K}}
+            {10\text{ km}} = 10 \text{ K km}^{-1}
+    \end{gather*}
+    This is the same as the dry adiabatic lapse rate.
+\item
+    The 700mbar to 300mbar layer is represented by the solid line in the figure,
+    which is roughly linear. The average temperature of this layer is around 325K.
+    Thus, the pressure scale height is:
+    \begin{gather*}
+        H = \frac{RT_0}{g}\\
+        H = \frac{8.3 \text{J mol}^{-1} \text{K}^{-1} \cdot 325 \text{K}}
+            {9.8 \text{m s}^{-2}}\\
+        H \approx \frac{\pi^2 \times \pi \times 10^2}{10} \text{m}\\
+        H \approx \pi \times 10^2 \text{m} 
+    \end{gather*}
+\end{enumerate}
+\end{document}
