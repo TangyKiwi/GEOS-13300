@@ -1,0 +1,101 @@
+%! Author = Kevin Lin
+%! Date = 5/2/2025
+
+% Preamble
+\documentclass[11pt,a4paper,margin=1in]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{cancel}
+
+\title{PSET 5}
+\author{Kevin Lin}
+\date{5/2/2025}
+
+\begin{document}
+\maketitle
+\section{}
+\begin{enumerate}[A.]
+    \item 
+    Given that the Moon has an albedo of 0.07, we can calculate the amount
+    of absorbed flux as: $F_\text{abs} = (1 - A) \times 1360 \text{ Wm}^{-2} = (1
+    - 0.07) \times 1360 \text{ Wm}^{-2} = 1264.8 \text{ Wm}^{-2}$. Using the 
+    Stefan-Boltzmann law, we can find the temperature at the hottest point on the
+    Moon to be:
+    \begin{gather*}
+        F_\text{abs} = \sigma T^4 \\
+        T = \left( \frac{F_\text{abs}}{\sigma} \right)^{1/4} \\
+        T = \left( \frac{1264.8 \text{ Wm}^{-2}}{5.67 \times 10^{-8} \text{ Wm}^{-2} 
+            \text{K}^{-4}} \right)^{1/4} \\
+        T = 386.465 \text{ K} = 235.967 \text{ }^{\circ}\text{F}
+    \end{gather*}
+    \item 
+    Astronaut's wear space suits that are white to reflect sunlight and 
+    minimize the amount of heat absorbed.
+    \item 
+    If it is noon and the equinox, the Sun is directly overhead the equator.
+    Knowing Chicago is $42^{\circ}$N, then the amount of flux striking is 
+    $F = \cos(42^{\circ}) \times 1360 \text{ Wm}^{-2} = 1010.68 \text{ Wm}^{-2}$. 
+    For noon on the winter solstice, given that Earth's obliquity is $23^{\circ}$,
+    the amount of flux striking is $F = \cos(42^{\circ} + 23^{\circ}) \times 1360
+    = 574.76 \text{ Wm}^{-2}$. For the summer solstice, the flux striking is $F 
+    = \cos(42^{\circ} - 23^{\circ}) \times 1360 = 1285.91 \text{ Wm}^{-2}$. 
+    \item 
+    We know that the sun strikes a circular area of the Earth, thus the total power
+    of sunlight striking the Earth is:
+    \begin{gather*}
+        W_\text{total} = \pi R^2 \times F \\
+        W_\text{total} = \pi (6.4 \times 10^6 \text { m})^2 \times 1360 \text{ Wm}^{-2}
+    \end{gather*}
+    Averaged over the Earth's entire surface, the flux is:
+    \begin{gather*}
+        F_\text{avg} = \frac{W_\text{total}}{4 \pi R^2} \\
+        F_\text{avg} = \frac{\cancel{\pi (6.4 \times 10^6 \text { m})^2} \times 1360 
+            \text{ Wm}^{-2}}{4 \times \cancel{\pi (6.4 \times 10^6 \text { m})^2}} \\
+        F_\text{avg} = \frac{1360}{4} \text{ Wm}^{-2} = 340 \text{ Wm}^{-2}
+    \end{gather*}
+    \item 
+    If Earth had no greenhouse gases, the surface temperature would be:
+    \begin{gather*}
+        F = \sigma T^4 \\
+        T = \left( \frac{F}{\sigma} \right)^{1/4} \\
+        T = \left( \frac{340 \text{ Wm}^{-2}}{5.67 \times 10^{-8} \text{ Wm}^{-2} 
+            \text{K}^{-4}} \right)^{1/4} \\
+        T = 278.275 \text{ K}
+    \end{gather*}
+    If the planet had an average albedo of 0.3, then the surface temperature would
+    be:
+    \begin{gather*}
+        (1 - A) \times F = \sigma T^4 \\
+        (1 - 0.3) \times 340 \text{ Wm}^{-2} = \sigma T^4 \\
+        0.7 \times 340 \text{ Wm}^{-2} = \sigma T^4 \\
+        T = \left( \frac{0.7 \times 340 \text{ Wm}^{-2}}{5.67 \times 10^{-8} 
+            \text{ Wm}^{-2} \text{K}^{-4}} \right)^{1/4} \\
+        T = 254.536 \text{ K}
+    \end{gather*}
+    \item
+    From class, we calculated the equation for the surface temperature of the Earth
+    with a single-layer atmosphere with emissivity $\epsilon$ to be:
+    \begin{gather*}
+        T_s = \left( \frac{S(1 - A)}{\sigma(4 - 2\epsilon)} \right)^{1/4}
+    \end{gather*}
+    Thus, for an albedo of 0.3 and surface temperature of 278 K, the emissivity
+    is:
+    \begin{gather*}
+        287 K = \left( \frac{1360 \text{ Wm}^{-2} (1 - 0.3)}{5.67 \times 10^{-8} 
+            \text{ Wm}^{-2}\text{K}^{-4} (4 - 2\epsilon)} \right)^{1/4} \\
+        \epsilon = 0.76
+    \end{gather*}
+    \item 
+    Using Kirchhoff's law, the longwave absorptivity of this single-layer atmosphere
+    is equal to the emissivity, thus $\alpha = \epsilon = 0.76$. Assuming no scatter,
+    the longwave transmissivity is $T = 1 - \alpha = 0.24$. Using Beer's law, the 
+    optical thickness of the atmosphere is simply:
+    \begin{gather*}
+        \tau = -\ln T\\
+        \tau = -\ln(0.24) \\
+        \tau = 1.427
+    \end{gather*}
+\end{enumerate}
+\end{document}
