@@ -1,0 +1,71 @@
+%! Author = Kevin Lin
+%! Date = 4/18/2025
+
+% Preamble
+\documentclass[11pt,a4paper,margin=1in]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{enumerate}
+
+\title{PSET 4}
+\author{Kevin Lin}
+\date{4/18/2025}
+
+\begin{document}
+\maketitle
+\section{}
+We know that the relative humidity is defined as:
+\begin{gather*}
+    RH = \frac{e}{e_s} \cdot 100\%
+\end{gather*}
+Where $e$ is the actual vapor pressure and $e_s$ is the saturation vapor pressure.
+From the graph, we can see that at points B and C, the vapor pressure is around
+5 mb. The vapor pressure of human breath is around 55 mb. When the two air parcels 
+mix, the vapor pressure and temperature at that state can be taken as their average.
+The saturation vapor pressure is then calculated at the average temperature. 
+
+Thus, at point B, the average vapor pressure is $(55 + 5) / 2 = 30$ mb and the 
+temperature is $(35 + 20) / 2 = 27.5$ C$^{\circ}$. The saturation vapor pressure 
+at this temperature is around 40 mb. Thus, the relative humidity at point B is:
+\begin{gather*}
+    RH = \frac{30 \text{ mb}}{40 \text{ mb}} \cdot 100\% = 75\%
+\end{gather*}
+
+At point C, the average vapor pressure is also $(55 + 5) / 2 = 30$ mb and the
+temperature is $(35 + 5) / 2 = 20$ C$^{\circ}$. The saturation vapor pressure at
+this temperature is around 25 mb. Thus, the relative humidity at point C is:
+\begin{gather*}
+    RH = \frac{30 \text{ mb}}{25 \text{ mb}} \cdot 100\% = 120\%
+\end{gather*}
+This means that the air parcel at point C is supersaturated, which means that
+the air parcel is unstable and will condense into liquid water. Thus, at point C,
+we expect to see our breath, but not at point B.
+
+\section{}
+We know that this is an adiabatic process. Let the initial temperature and pressure
+be $T_1$ and $P_1$, representing the temperature and pressure of the air outside
+the jet. Let the temperature and pressure of the air inside the jet be $T_2$ 
+and $P_2$ after it enters the aircraft. Thus, from an adiabatic process, we know 
+that:
+\begin{gather*}
+    T_1 \left( \frac{p_0}{P_1} \right)^{\frac{R}{c_p}} = T_2 \left( \frac{p_0}{P_2} 
+    \right)^{\frac{R}{c_p}}\\
+    T_2 = T_1 \left( \frac{P_2}{P_1} \right)^{\frac{R}{c_p}}\\
+\end{gather*}
+Assume that $T_1$ is 220 K and $P_1$ is 1000 mb = $10^3$ mb. The pressure outside 
+the jet $P_2$ 300 mb $\approx \pi \times 10^2$ mb. We know $R$ is 287 $\approx 
+\pi \times 10^2$ J K$^{-1}$ Kg$^{-1}$, and that $c_p \approx 10^3$ K$^{-1}$ 
+Kg$^{-1}$. Thus, we get $T_2$ as:
+\begin{gather*}
+    T_2 = 220 \text{ K} \left( \frac{10^3 \text{ mb}}
+        {\pi \times 10^2 \text{ mb}} \right)^{\frac{\pi \times 10^2 \text{J K}^{-1} 
+        \text{ Kg}^{-1}}{10^3 \text{J K}^{-1}\text{ Kg}^{-1}}}\\
+    T_2 = 220 \text{ K} \pi^{\frac{\pi}{10}}\\
+    T_2 \approx 220 \text{ K} \pi^{\frac{1}{\pi}} \approx \pi \times 10^2 \text{ K}\\
+\end{gather*}
+Converting this back to C$^{\circ}$ gives us $\approx$ 41 C$^{\circ}$. This is
+about a 20 C$^{\circ}$ increase in temperature. Thus, the air inside the jet needs
+to be cooled down by 20 C$^{\circ}$ to reach an appropriate temperature for the
+cabin (assume 20 C$^{\circ}$ for room temperature). 
+\end{document}
