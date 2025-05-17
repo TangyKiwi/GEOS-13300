@@ -1,0 +1,138 @@
+%! Author = Kevin Lin
+%! Date = 5/9/2025
+
+% Preamble
+\documentclass[11pt,a4paper,margin=1in]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{cancel}
+
+\title{PSET 5}
+\author{Kevin Lin}
+\date{5/9/2025}
+
+\begin{document}
+\maketitle
+\section{}
+\begin{enumerate}[A.]
+    \item 
+    Near the surface at the center of the tropical cyclone, the winds spiral 
+    inward, thus the divergence of the horizontal wind field is negative as the 
+    winds are converging.
+    \item 
+    At the center and top of the tropical cyclone, the winds spiral outward,
+    thus the divergence of the horizontal wind field is positive as the winds are
+    diverging.
+    \item 
+    From the surface center of the cyclone, we know the winds are converging, and
+    thus is drawing additional air mass into the cyclone. This air mass is then
+    transported upward by the vertically convecting eye wall, and consequently must
+    "leave" the cyclone and diverges at the top. Thus, the sign of divergence at
+    the surface must be opposite to the sign at the top of the cyclone.
+    \item 
+    \begin{gather*}
+        \vec{\nabla} \cdot \vec{v} = \frac{\partial u}{\partial x} + 
+            \frac{\partial v}{\partial y} \\
+        \vec{\nabla} \cdot \vec{v} \sim \frac{m/s}{m} + \frac{m/s}{m} = \frac{1}{s}
+    \end{gather*}
+    \item 
+    Let the radial speed wind in the eyewall be $V_r = -1 \text{ ms}^{-1}$
+    (negative because converging). Because the diameter of the cyclone is 50 km, 
+    the radius of the cyclone is  25 km = 25000 m. The radial speed wind can be 
+    expressed in Cartesian vector form as:
+    \begin{gather*}
+        \vec{V_r} = V_r \cos(\theta) \hat{i} + V_r \sin(\theta) \hat{j} \\
+    \end{gather*}
+    From polar coordinates, we know that:
+    \begin{gather*}
+        \cos(\theta) = \frac{x}{r}, \  \sin(\theta) = \frac{y}{r} \\
+    \end{gather*}
+    where $r = \sqrt{x^2 + y^2}$. Thus, we can express the radial speed wind
+    in Cartesian coordinates as:
+    \begin{gather*}
+        u = V_r \cos(\theta) = V_r \frac{x}{r} = -\frac{x}{r} \\
+        v = V_r \sin(\theta) = V_r \frac{y}{r} = -\frac{y}{r}
+    \end{gather*}
+    Thus, the divergence is:
+    \begin{gather*}
+        \vec{\nabla} \cdot \vec{v} = \frac{\partial u}{\partial x}\left(-\frac{x}{r}\right) 
+            + \frac{\partial v}{\partial y}\left(-\frac{y}{r}\right) \\
+        \frac{\partial u}{\partial x}\left(-\frac{x}{r}\right) = -\frac{\partial u}
+            {\partial x}\left(\frac{x}{\sqrt{x^2 + y^2}}\right) = -\left(\dfrac{
+                r - x \frac{2x}{2r}}{r^2}\right) = -\left(\frac{1}{r} - 
+                \frac{x^2}{r^3}\right)\\
+        \frac{\partial v}{\partial y}\left(-\frac{y}{r}\right) = -\left(\frac{1}{r}
+            - \frac{y^2}{r^3}\right) \\
+        \vec{\nabla} \cdot \vec{v} = -\left(\frac{1}{r} - \frac{x^2}{r^3}\right)
+            - \left(\frac{1}{r} - \frac{y^2}{r^3}\right) \\
+        \vec{\nabla} \cdot \vec{v} = -\left(\frac{2}{r} - \frac{x^2 + y^2}{r^3}\right) \\
+        \vec{\nabla} \cdot \vec{v} = -\left(\frac{2}{r} - \frac{r^2}{r^3}\right) 
+            = -\frac{1}{r} = -\frac{1 \text{ ms}^{-1}}{25000 \text{m}} = -4 
+            \times 10^{-5} \text{ s}^{-1}
+    \end{gather*}
+    \item 
+    We know that northern hemisphere cyclones spin counterclockwise, thus the
+    vorticity at the center of the cyclone is positive.
+    \item 
+    \begin{gather*}
+        \vec{\nabla} \times \vec{v} = \frac{\partial v}{\partial x} - 
+            \frac{\partial u}{\partial y} \\
+        \vec{\nabla} \times \vec{v} \sim \frac{m/s}{m} - \frac{m/s}{m} = \frac{1}{s}
+    \end{gather*}
+    \item 
+    The cyclonic wind speed is tangential to the rotating cyclone and thus 
+    perpendicular to the radial wind speed. Following our calculations from E, 
+    we can modify our Cartesian coordinates:
+    \begin{gather*}
+        u = -V_\theta \sin(\theta) = -V_\theta \frac{y}{r} \\
+        v = V_\theta \cos(\theta) = V_\theta \frac{x}{r}
+    \end{gather*}
+    We make $u$ negative in order to maintain the counterclockwise rotation of 
+    the cyclone. Additionally, tangential velocity scales with the radius, so 
+    adjusting $V_\theta$ accordingly, we get:
+    \begin{gather*}
+        u = -\frac{V_\theta r}{R} \frac{y}{r} = -\frac{V_\theta}{R} y \\
+        v = \frac{V_\theta r}{R} \frac{x}{r} = \frac{V_\theta}{R} x
+    \end{gather*}
+    Thus, our vorticity is:
+    \begin{gather*}
+        \vec{\nabla} \times \vec{v} = \frac{\partial v}{\partial x}\left(
+            \frac{V_\theta}{R}x\right) - \frac{\partial u}{\partial y}\left(
+            -\frac{V_\theta}{R}y\right) \\
+        \vec{\nabla} \times \vec{v} = \frac{V_\theta}{R} + \frac{V_\theta}{R} \\
+        \vec{\nabla} \times \vec{v} = \frac{2V_\theta}{R} = \frac{2 \times 60 
+            \text{ ms}^{-1}}{25000 \text{ m}} = 4.8 \times 10^{-3} \text{ s}^{-1} 
+    \end{gather*}
+    \item 
+    If the hurricane is at a latitude of 20$^\circ$ N, and $\Omega = 7.3 \times
+    10^{-5} \text{ s}^{-1}$, we can calculate the planetary vorticity:
+    \begin{gather*}
+        f = 2 \times 7.3 \times 10^{-5} \text{ s}^{-1} \sin(20^\circ) \\
+        f = 5.13 \times 10^{-5} \text{ s}^{-1}
+    \end{gather*}
+    This makes the vorticity of the cyclone about 93 times stronger than the
+    vorticity of the planet.
+    \item 
+    \begin{gather*}
+        u = -\frac{\partial \psi}{\partial y} = -\frac{\partial}{\partial y} 
+            \left(2u_0r_0^{\frac{1}{2}}(x^2 + y^2)^{\frac{1}{4}}\right)\\
+        u = -2u_0r_0^{\frac{1}{2}}\left(\frac{1}{4}(x^2 + y^2)^{-\frac{3}{4}}(2y)
+            \right) = -\dfrac{u_0r_0^{\frac{1}{2}}y}{(x^2 + y^2)^{\frac{3}{4}}}\\
+        v = \frac{\partial \psi}{\partial x} = \dfrac{u_0r_0^{\frac{1}{2}}x}
+            {(x^2 + y^2)^{\frac{3}{4}}}
+    \end{gather*}
+    \item 
+    Note that $x^2 + y^2 = r^2\cos^2(\theta) + r^2\sin^2(\theta) = r^2$, so:
+    \begin{gather*}
+        u = -\frac{u_0r_0^{\frac{1}{2}}r\sin(\theta)}{(r^2)^{\frac{3}{4}}} = 
+            -\frac{u_0r_0^{\frac{1}{2}}\sin(\theta)}{r^{\frac{1}{2}}}\\
+        v = \frac{u_0r_0^{\frac{1}{2}}r\cos(\theta)}{(r^2)^{\frac{3}{4}}} =
+            \frac{u_0r_0^{\frac{1}{2}}\cos(\theta)}{r^{\frac{1}{2}}}
+    \end{gather*} 
+    \item 
+        The velocities decay by a factor of $r^{-\frac{1}{2}}$ as the distance 
+        from the center of the cyclone increases. 
+\end{enumerate}
+\end{document}
