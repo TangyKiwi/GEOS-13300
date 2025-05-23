@@ -18,7 +18,33 @@
 \section{}
 \begin{enumerate}[A.]
     \item 
-    On the northern side of the equator (northern hemisphere), 
+    We know the Rossby number is given by $Ro = \frac{U}{fL}$, where we can
+    approximate $U = 0.1$ m/s, the speed of the water draining out of the bucket,
+    and for simplicity, also assume $L = 0.1$ m. Thus, we can estimate:
+    \begin{gather*}
+        Ro = \frac{U}{fL} \\
+        Ro = \frac{0.1 \text{ m/s}}{2 \times 7.3 \times 10^{-5} \text{ s}^{-1} 
+            \times \sin(0.1) \times 0.1 \text{ m}} \\
+        Ro \approx \frac{10^{-1}}{2 \times 2\pi \times 10^{-5} \times 10^{-3}
+            \times 10^{-1}} \\
+        Ro \approx \frac{1}{10 \times 10^{-5} \times 10^{-3}} \approx 10^7 >> 1
+    \end{gather*}
+    Thus, we can conclude that the Coriolis force is negligible in this case.
+    \item 
+    In order for the Coriolis force to be negligible, we need $Ro << 1$. Thus:
+    \begin{gather*}
+        Ro = \frac{U}{fL} << 1 \\
+        U << fL \\
+        U << 2 \times 7.3 \times 10^{-5} \text{ s}^{-1} \times \sin(0.1) 
+            \times 0.1 \text{ m} \\
+        U << 10 \times 10^{-5} \times 10^{-3} \times 10^{-1} \text{ m/s} \\
+        U << 10^{-8} \text{ m/s}
+    \end{gather*}
+    \item 
+    No, it wouldn't matter. Although at the North Pole, the Coriolis force is 
+    at its strongest, the minute amount of water and drainage speed would be
+    still be negligible along with the Coriolis force, and $Ro$ would still be
+    $>> 1$.
 \end{enumerate}
 
 \section{}
@@ -35,9 +61,32 @@
         \Delta p = V \rho f \Delta x \\
         4 \text{ hPa} = V \times 1 \text{ kg m}^{-3} \times 2 \times 7.3 \times
             10^{-5} \text{ s}^{-1} \times \sin(20^{\circ}) \times 111 \text{ km} \\
-        4 \text{ hPa} = V \times 5.54 \text{ kg m}^{-2} \text{ s}^{-1} \\
+        4 \text{ hPa} \approx V \times \pi \text{ kg m}^{-2} \text{ s}^{-1} \\
         V = \frac{4 \text{ hPa}}{5.54 \text{ kg m}^{-2} \text{ s}^{-1}} \\
-        4 \text{ hPa} = 4 \frac{N}{m^2} = 4 \frac{kg}{m^3 s^2} \\
+        4 \text{ hPa} = 400 \frac{\text{N}}{\text{m}^2} = 400 \frac{\text{kg}}
+            {\text{ms}^2} \\
+        V \approx  \frac{400 \text{kg}}{\text{ms}^2} \cdot \frac{1 \text{m}^2\text{s}^1}
+            {\pi \text{kg}} \approx  100 \text{ m/s}
     \end{gather*}
+    Compared to the speed of sound at sea level (340 m/s), this is a reasonable 
+    answer for the wind speed of a cyclone.
+    \item 
+    Balancing the Coriolis and centrifugal forces against the pressure gradient
+    force, and assuming $r = 111$ km, we have:
+    \begin{gather*}
+        fV + \frac{V^2}{r} = \frac{1}{\rho} \frac{\partial p}{\partial x}\\
+        2 \times 7.3 \times 10^{-5} \text{ s}^{-1} \times \sin(20^{\circ}) \times
+            V + \frac{V^2}{111 \text{ km}} = \frac{1}{1 \text{ kg m}^{-3}} 
+            \frac{4 \text{ hPa}}{111 \text{ km}} \\
+        \pi \times 10^{-5} \text{ s}^{-1} \times V + \frac{V^2}{10^5 \text{ m}} = 
+            \frac{400 \text{ m}}{10^5 \text{ s}^2} \\
+        \pi \text{ ms}^{-1} \times V + V^2 = 400 \frac{\text{m}^2}{\text{s}^2} \\
+        V^2 + \pi V - 400 = 0\\
+        V = \frac{-\pi \pm \sqrt{\pi^2 + 4 \times 400}}{2} \\
+        V \approx \frac{-\pi + \sqrt{\pi^2 \times 10^2}}{2} \\
+        V \approx \frac{-\pi + \pi \times 10}{2} \approx \pi^3 / 2 \approx \pi^2
+            \approx 10 \text{ m/s}\\
+    \end{gather*}
+    This value considerably changes depending on our estimation of $r$.
 \end{enumerate}
 \end{document}
